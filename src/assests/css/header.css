@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    padding: 1.5rem 0 0 1.5rem;
+   width: 150px;
+}

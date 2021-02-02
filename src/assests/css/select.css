@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.options{
+    margin: auto;
+    width: 375px;
+    max-height: 300px;
+    overflow: auto;
+    display: none;
+    z-index: 200;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.3);
+}
+
+.options.active{
+    display: block;
+}
+
+.opt{
+    cursor: pointer;
+    padding: 15px 0px 0px 15px;
+}
+
+.opt input{
+    text-align: center;
+    padding-bottom: 15px;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.opt:hover{
+    background-color: lightgrey;
+}
+.opt:hover input{
+    color: #000;
+}
+.class{
+    width: 100%;
+}
+
+.selectbox{
+    width: 100%;
+    height: 4rem;
+    background-color: #fdc200;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;z-index: 500;
+}
+
+/* Works on Firefox */
+.options{
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fdc200;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .options::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .options::-webkit-scrollbar-track {
+    background: #fdc200;
+    border-radius: 15px;
+  }
+  
+  .options::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 20px;
+    border: 3px solid #fdc200;
+  }
